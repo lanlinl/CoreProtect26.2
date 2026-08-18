@@ -4,9 +4,8 @@
 name: Maven Package
 
 on:
-  release:
-    types: [created]
-
+  workflow_dispatch:      # 👈 添加这一行，允许手动触发
+    
 jobs:
   build:
 
